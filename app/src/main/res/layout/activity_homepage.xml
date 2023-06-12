@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:keyboardNavigationCluster="true"
+    tools:context=".Homepage">
+
+
+
+    <ImageButton
+        android:id="@+id/navmenu"
+        android:contentDescription="Menu"
+        android:layout_gravity="end"
+        android:padding="8dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/homepage_menu_24"
+        android:backgroundTint="#DE4C3C"
+        app:layout_constraintBottom_toBottomOf="@+id/hello"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hello"
+        app:layout_constraintVertical_bias="0.482"/>
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="377dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/custom_edittext"
+        android:drawablePadding="8dp"
+        android:padding="10dp"
+        android:text="@string/ho_geldiniz"
+        android:textColor="#DE4C3C"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <ScrollView
+        android:id="@+id/menuscroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/navmenu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/anasyf1"
+                android:layout_width="178dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="96dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/anasyf2"
+                app:layout_constraintEnd_toEndOf="@+id/anasyf2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+
+                <ImageView
+                    android:id="@+id/dtyltmzlk"
+                    android:layout_width="128dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/detaylitemizlik"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/detayl_temizlik"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/anasyf2"
+                android:layout_width="178dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="104dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.931"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/koltuktmzlk"
+                    android:layout_width="128dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/koltuktemizlik"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/koltuk_temizli_i"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/anasyf3"
+                android:layout_width="178dp"
+                android:layout_height="180dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintEnd_toEndOf="@+id/anasyf4"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/anasyf1">
+
+
+                <ImageView
+                    android:id="@+id/tireclean"
+                    android:layout_width="128dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/tireclean"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/teker_temizli_i"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/anasyf4"
+                android:layout_width="178dp"
+                android:layout_height="180dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/anasyf2"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="NotSibling">
+
+
+                <ImageView
+                    android:id="@+id/pasta"
+                    android:layout_width="128dp"
+                    android:layout_height="99dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/pasta"
+                    android:contentDescription="@string/app_name"
+                    android:padding="8dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/pasta_polish"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

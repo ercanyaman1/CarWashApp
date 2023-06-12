@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CarWAshApp</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="facebook_app">Facebook</string>
+    <string name="kay_t_ol">Kayıt Ol</string>
+    <string name="hala_hesab_n_z_yok_mu">Hala Hesabınız Yok Mu?</string>
+    <string name="anasayfa">Anasayfa</string>
+    <string name="detayl_temizlik">Detaylı Temizlik</string>
+    <string name="koltuk_temizli_i">Koltuk Temizliği</string>
+    <string name="teker_temizli_i">Teker Temizliği</string>
+    <string name="pasta_polish">Pasta Polish</string>
+    <string name="ho_geldiniz">Hoşgeldiniz</string>
+    <string name="tarih_se_in">Tarih Seçin</string>
+    <string name="l_tfen_tarih_ve_saat_se_iniz">Lütfen Tarih ve Saat Seçiniz</string>
+    <string name="saat_se_in">Saat Seçin</string>
+    <string name="devam_edin">Devam Edin</string>
+    <string name="l_tfen_ara_se_iniz">Lütfen Araç Seçiniz</string>
+</resources>

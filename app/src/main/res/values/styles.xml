@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Splash.AppCompat.Light.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ThemeOverlay.AppCompat.NoActionBar" parent="ThemeOverlay.AppCompat.Dark">
+        <!-- Gerekli stil özelliklerini buraya ekleyin -->
+    </style>
+
+</resources>

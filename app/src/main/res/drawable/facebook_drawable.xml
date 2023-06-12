@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/facebook_icon" android:state_pressed="true"/>
+    <item android:drawable="@drawable/facebook_icon"/>
+
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android" tools:ignore="StateListReachable">
+        <item android:drawable="@drawable/ic_launcher_foreground"
+            android:width="15dp"
+            android:height="15dp"
+            android:gravity="center">
+            <shape android:shape="oval">
+                <stroke
+                    android:width="3dp"
+                    android:color="#8692f7"/>
+                <solid android:color="#FFFFFF"/>
+            </shape>
+        </item>
+    </layer-list>
+
+
+</selector>

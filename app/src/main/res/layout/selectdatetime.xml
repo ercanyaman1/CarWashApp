@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Datetimeselect">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-278dp"
+        android:text="@string/l_tfen_tarih_ve_saat_se_iniz"
+        android:textColor="@color/stockcolor"
+        android:textSize="25sp" />
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/datePickerIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/calendar_month_24"
+            android:clickable="true"
+            android:layout_marginStart="10dp" />
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/calendar_month_24"
+            android:focusable="false"
+            android:hint="@string/tarih_se_in"
+            android:inputType="date"
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+    <!-- Saat Seçimi -->
+    <LinearLayout
+        android:id="@+id/timeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateLayout"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/timePickerIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/clock_24"
+            android:clickable="true"
+            android:layout_marginLeft="10dp" />
+
+        <EditText
+            android:id="@+id/timeEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/saat_se_in"
+            android:padding="10dp"
+            android:drawableStart="@drawable/clock_24"
+            android:background="@drawable/custom_edittext"
+            android:inputType="time"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/continuebtn"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/oval_button_background"
+        android:text="@string/devam_edin"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>
+

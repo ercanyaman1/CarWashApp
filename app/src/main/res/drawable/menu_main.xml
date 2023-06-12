@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_profile"
+        android:title="Profil" />
+
+    <item
+        android:id="@+id/menu_my_cars"
+        android:title="Arabalarım" />
+
+    <item
+        android:id="@+id/menu_addresses"
+        android:title="Adresler" />
+
+    <item
+        android:id="@+id/menu_support"
+        android:title="Destek" />
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="Uygulamadan Çıkış" />
+</menu>
